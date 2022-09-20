@@ -2,14 +2,18 @@
   "name": "developer-helper",
   "version": "0.1.0",
   "private": true,
+  "main": "lib/developerHelper.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --mode production --target lib --dest lib --name developerHelper package/index.js",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "lodash": "^4.17.21",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11"
   },
@@ -29,6 +33,27 @@
     "node-sass": "^4.12.0",
     "prettier": "^2.2.1",
     "sass-loader": "^8.0.2",
-    "vue-template-compiler": "^2.6.11"
-  }
+    "vue-template-compiler": "^2.6.11",
+    "prettier-config-standard": "^5.0.0"
+  },
+  "description": "## Project setup ``` npm install ```",
+  "directories": {
+    "example": "example",
+    "lib": "lib",
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hexiang-code/devloper-helper.git"
+  },
+  "keywords": [
+    "develop",
+    "helper"
+  ],
+  "author": "rik.he",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hexiang-code/devloper-helper/issues"
+  },
+  "homepage": "https://github.com/hexiang-code/devloper-helper#readme"
 }
